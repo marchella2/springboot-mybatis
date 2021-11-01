@@ -2,10 +2,7 @@ package com.example.springbootmybatis.resource;
 
 import com.example.springbootmybatis.mapper.EmployeeMapper;
 import com.example.springbootmybatis.models.Employee;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -36,5 +33,16 @@ public class EmployeeResource {
         employeeMapper.insert(emp);
 
         return "Data berhasil tersimpan";
+    }
+
+    @PutMapping("/updatedata")
+    public String updateData()
+    {
+        Employee emp = new Employee();
+        emp.setFirst_name("Acel");
+        emp.setEmail_address("marchella.putris2@gmail.com");
+
+        employeeMapper.update(emp);
+        return "Data berhasil diubah";
     }
 }
