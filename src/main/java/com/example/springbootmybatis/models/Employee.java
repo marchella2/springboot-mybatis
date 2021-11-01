@@ -3,17 +3,9 @@ package com.example.springbootmybatis.models;
 public class Employee {
 
     private int id;
-    private String firstName;
-    private String lastName;
-    private String emailId;
-
-    public Employee(int id, String firstName, String lastName, String emailId)
-    {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.emailId = emailId;
-    }
+    private String first_name;
+    private String last_name;
+    private String email_address;
 
     public int getId() {
         return id;
@@ -23,27 +15,27 @@ public class Employee {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
-    public String getEmailId() {
-        return emailId;
+    public String getEmail_address() {
+        return email_address;
     }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setEmail_address(String email_address) {
+        this.email_address = email_address;
     }
 }
