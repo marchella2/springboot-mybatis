@@ -2,12 +2,12 @@ package com.example.springbootmybatis.models;
 
 public class Employee {
 
-    private long id;
+    private int id;
     private String firstName;
     private String lastName;
     private String emailId;
 
-    public Employee(long id, String firstName, String lastName, String emailId)
+    public Employee(int id, String firstName, String lastName, String emailId)
     {
         this.id = id;
         this.firstName = firstName;
@@ -15,11 +15,11 @@ public class Employee {
         this.emailId = emailId;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
