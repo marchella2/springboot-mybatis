@@ -45,4 +45,15 @@ public class EmployeeResource {
         employeeMapper.update(emp);
         return "Data berhasil diubah";
     }
+
+    @DeleteMapping("/deletedata")
+    public String deleteData()
+    {
+        Employee employee = new Employee();
+        employee.setFirst_name("Acel");
+
+        employeeMapper.delete(employee);
+        return "Data berhasil dihapus";
+    }
+
 }

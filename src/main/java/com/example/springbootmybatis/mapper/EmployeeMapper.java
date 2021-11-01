@@ -15,7 +15,7 @@ public interface EmployeeMapper {
 //    public Employee findById(long id);
 
     @Delete("delete from employees where first_name=#{first_name}")
-    public void deleteById(Employee employee);
+    public void delete(Employee employee);
 
     @Insert("insert into employees(first_name, last_name, email_address) " +
             " values (#{first_name}, #{last_name}, #{email_address})")
